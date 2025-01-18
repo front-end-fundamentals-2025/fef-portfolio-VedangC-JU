@@ -68,10 +68,10 @@ p {
 form {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;  /* Center align the form fields */
+    justify-content: center;  
     margin-top: 1rem;
     width: 100%;
-    gap: 0.5rem; /* Reduced space between form fields */
+    gap: 0.5rem; 
 }
 
 label {
@@ -79,17 +79,17 @@ label {
     width: 100%;
     margin: 0.5rem 0 0.2rem;
     font-weight: bold;
-    text-align: center; /* Center align the label text */
+    text-align: center; 
 }
 
 input, textarea {
-    width: 48%;  /* Makes form fields 48% width, allowing space for labels and margins */
+    width: 48%;  
     padding: 0.75rem;
     margin-bottom: 1.2rem;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1rem;
-    text-align: center; /* Center align the input text */
+    text-align: center; 
 }
 
 textarea {
@@ -129,7 +129,7 @@ footer p {
 }
 
 a.btn {
-    text-decoration: none; /* Remove underline from the button link */
+    text-decoration: none; 
 }
 
 /* Responsive Design */
@@ -139,10 +139,10 @@ a.btn {
     }
 
     input, textarea {
-        width: 100%; /* Full width on small screens */
+        width: 100%; 
     }
 
     button, .btn {
-        width: 100%; /* Button takes full width on small screens */
+        width: 100%; 
     }
 }
