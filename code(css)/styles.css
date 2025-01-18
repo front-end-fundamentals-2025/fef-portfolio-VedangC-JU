@@ -1,0 +1,148 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    background: #007bff;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+nav {
+    margin: 1rem 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* Styling for contact form in a horizontal layout */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  /* Center align the form fields */
+    margin-top: 1rem;
+    width: 100%;
+    gap: 0.5rem; /* Reduced space between form fields */
+}
+
+label {
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0 0.2rem;
+    font-weight: bold;
+    text-align: center; /* Center align the label text */
+}
+
+input, textarea {
+    width: 48%;  /* Makes form fields 48% width, allowing space for labels and margins */
+    padding: 0.75rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center; /* Center align the input text */
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    margin-bottom: 1.2rem;
+}
+
+button, .btn {
+    background: #007bff;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 1rem auto;
+}
+
+button:hover, .btn:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #343a40;
+    color: white;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+a.btn {
+    text-decoration: none; /* Remove underline from the button link */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    form {
+        flex-direction: column;
+    }
+
+    input, textarea {
+        width: 100%; /* Full width on small screens */
+    }
+
+    button, .btn {
+        width: 100%; /* Button takes full width on small screens */
+    }
+}
