@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Overview</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <h1>Portfolio</h1>
+        <nav>
+            <a href="overview.html">Home</a>
+            <a href="about_me.html">About Me</a>
+            <a href="contact_me.html">Contact Me</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Overview</h2>
+        <div class="overview-grid">
+            <div class="category-box" onclick="redirectToPage('logos.html')">Logos</div>
+            <div class="category-box" onclick="redirectToPage('poster.html')">Posters</div>
+            <div class="category-box" onclick="redirectToPage('banner.html')">Banners</div>
+            <div class="category-box" onclick="redirectToPage('magazine.html')">Magazine</div>
+            <div class="category-box" onclick="redirectToPage('miscellaneous.html')">Miscellaneous</div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Vedang Pankaj Chandode. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function redirectToPage(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>
