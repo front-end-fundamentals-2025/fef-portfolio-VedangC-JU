@@ -32,6 +32,11 @@ header h1 {
 
 nav {
     margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;                                /* This ensures nav links wrap on smaller screens */
+    gap: 1rem;                                      /* This adds space between links */
+    padding: 0.5rem;
 }
 
 nav a {
@@ -134,6 +139,15 @@ a.btn {
 
 /* Responsive Design */
 @media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
     form {
         flex-direction: column;
     }

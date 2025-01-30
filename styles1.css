@@ -26,6 +26,14 @@ header h1 {
     margin-bottom: 0.5rem;
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;                                        /* This makes nav responsive */
+    gap: 1rem;                                              /* This adds space between links */
+    padding: 0.5rem;
+}
+
 nav a {
     color: white;
     text-decoration: none;
@@ -52,6 +60,7 @@ h2 {
     color: #007bff;
 }
 
+/* Responsive Grid Layout */
 .overview-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -79,6 +88,15 @@ h2 {
     background-color: #f0f8ff;
 }
 
+/* Image Responsiveness */
+img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
 .design-grid {
     display: flex;
     flex-wrap: wrap;
@@ -97,6 +115,7 @@ h2 {
 
 .design-item img {
     max-width: 100%;
+    width: 500px; /* Set a reasonable default size */
     border-radius: 5px;
     margin-bottom: 1rem;
 }
@@ -107,4 +126,19 @@ footer {
     text-align: center;
     padding: 1rem;
     margin-top: auto; /* Ensures footer stays at the bottom */
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    .overview-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 column for mobile */
+    }
 }
