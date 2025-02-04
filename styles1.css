@@ -142,3 +142,32 @@ footer {
         grid-template-columns: repeat(1, 1fr); 
     }
 }
+
+/* Loading Spinner Styles */
+.spinner {
+    display: none; /* Hidden initially */
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(0, 123, 255, 0.3);
+    border-top: 5px solid #007bff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    
+    /* Centering the spinner */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Keyframes for Spinner Animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Hide actual content initially */
+.actual-content {
+    display: none;
+}
